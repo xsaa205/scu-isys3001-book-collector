@@ -1,0 +1,15 @@
+{
+  "version": 2,  // 指定 Vercel 配置版本（当前最新为 v2）
+  "builds": [    // 定义构建规则
+    {
+      "src": "public/index.html",  // 入口文件路径
+      "use": "@vercel/static"      // 使用 Vercel 的静态文件构建器
+    }
+  ],
+  "routes": [    // 定义路由规则（单页应用 SPA 路由重定向）
+    {
+      "src": "/(.*)",             // 匹配所有路径
+      "dest": "/public/index.html" // 重定向到 index.html（前端路由处理）
+    }
+  ]
+}
