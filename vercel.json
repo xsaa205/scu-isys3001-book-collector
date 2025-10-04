@@ -1,15 +1,15 @@
 {
-  "version": 2,  // 指定 Vercel 配置版本（当前最新为 v2）
-  "builds": [    // 定义构建规则
+  "version": 2,  // Specifies the Vercel configuration version (the latest version currently is v2)
+  "builds": [    // Defines build rules
     {
-      "src": "public/index.html",  // 入口文件路径
-      "use": "@vercel/static"      // 使用 Vercel 的静态文件构建器
+      "src": "public/index.html",  // Path to the entry file
+      "use": "@vercel/static"      // Uses Vercel's static file builder
     }
   ],
-  "routes": [    // 定义路由规则（单页应用 SPA 路由重定向）
+  "routes": [    // Defines routing rules (Single-Page Application (SPA) route redirection)
     {
-      "src": "/(.*)",             // 匹配所有路径
-      "dest": "/public/index.html" // 重定向到 index.html（前端路由处理）
+      "src": "/(.*)",             // Matches all paths
+      "dest": "/public/index.html" // Redirects to index.html (handled by front-end routing)
     }
   ]
 }
