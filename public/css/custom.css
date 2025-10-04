@@ -1,0 +1,17 @@
+/* Page background and typography */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8fafc;
+}
+
+/* Book card hover effect */
+.border.rounded:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive: Single-column layout for small screens */
+@media (max-width: 640px) {
+    .grid-cols-2 {
+        grid-template-columns: 1fr;
+    }
+}
