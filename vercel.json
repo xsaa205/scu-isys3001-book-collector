@@ -1,15 +1,16 @@
 {
-  "version": 2,  // Specifies the Vercel configuration version (the latest version currently is v2)
-  "builds": [    // Defines build rules
+  "version": 2,  
+  "builds": [    
     {
-      "src": "public/index.html",  // Path to the entry file
-      "use": "@vercel/static"      // Uses Vercel's static file builder
+      "src": "public/index.html", 
+      "use": "@vercel/static"      
     }
   ],
-  "routes": [    // Defines routing rules (Single-Page Application (SPA) route redirection)
+  "routes": [    
     {
-      "src": "/(.*)",             // Matches all paths
-      "dest": "/public/index.html" // Redirects to index.html (handled by front-end routing)
+      "src": "/(.*)",             
+      "dest": "/public/index.html" 
     }
   ]
 }
+
