@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "version": 2,  
   "builds": [    
@@ -14,3 +15,20 @@
   ]
 }
 
+=======
+{
+  "version": 2,  
+  "builds": [    
+    {
+      "src": "public/index.html", 
+      "use": "@vercel/static"      
+    }
+  ],
+  "routes": [    
+    {
+      "src": "/(.*)",             
+      "dest": "/public/index.html" 
+    }
+  ]
+}
+>>>>>>> dfea9ed (chore:add Vercel deployment configuration)
